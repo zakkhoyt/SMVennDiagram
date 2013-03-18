@@ -7,6 +7,7 @@
 //
 
 #import "SMViewController.h"
+#import "SMVennDiagramView.h"
 
 @interface SMViewController ()
 
@@ -24,6 +25,22 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+
+
+
+#pragma mark - UIResponder touch events.
+// If we don't override these methods, the responder chain will end up at our
+// touch screen input
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    NSLog(@"%s:%d", __FUNCTION__, __LINE__);
+}
+- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event{
+    NSLog(@"%s:%d", __FUNCTION__, __LINE__);
+}
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event{
+    NSLog(@"%s:%d", __FUNCTION__, __LINE__);
 }
 
 @end

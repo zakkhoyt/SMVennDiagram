@@ -19,6 +19,8 @@
 		C6D8D1DB16F6A769007AE0A1 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6D8D1D916F6A769007AE0A1 /* MainStoryboard_iPhone.storyboard */; };
 		C6D8D1DE16F6A769007AE0A1 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6D8D1DC16F6A769007AE0A1 /* MainStoryboard_iPad.storyboard */; };
 		C6D8D1E116F6A769007AE0A1 /* SMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D8D1E016F6A769007AE0A1 /* SMViewController.m */; };
+		C6D8D1E916F6A7DA007AE0A1 /* SMVennDiagramView.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D8D1E816F6A7DA007AE0A1 /* SMVennDiagramView.m */; };
+		C6D8D1EC16F6AB7F007AE0A1 /* SMVennObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D8D1EB16F6AB7F007AE0A1 /* SMVennObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,10 @@
 		C6D8D1DD16F6A769007AE0A1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		C6D8D1DF16F6A769007AE0A1 /* SMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMViewController.h; sourceTree = "<group>"; };
 		C6D8D1E016F6A769007AE0A1 /* SMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMViewController.m; sourceTree = "<group>"; };
+		C6D8D1E716F6A7DA007AE0A1 /* SMVennDiagramView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMVennDiagramView.h; sourceTree = "<group>"; };
+		C6D8D1E816F6A7DA007AE0A1 /* SMVennDiagramView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMVennDiagramView.m; sourceTree = "<group>"; };
+		C6D8D1EA16F6AB7F007AE0A1 /* SMVennObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMVennObject.h; sourceTree = "<group>"; };
+		C6D8D1EB16F6AB7F007AE0A1 /* SMVennObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMVennObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +98,10 @@
 				C6D8D1DF16F6A769007AE0A1 /* SMViewController.h */,
 				C6D8D1E016F6A769007AE0A1 /* SMViewController.m */,
 				C6D8D1C816F6A769007AE0A1 /* Supporting Files */,
+				C6D8D1E716F6A7DA007AE0A1 /* SMVennDiagramView.h */,
+				C6D8D1E816F6A7DA007AE0A1 /* SMVennDiagramView.m */,
+				C6D8D1EA16F6AB7F007AE0A1 /* SMVennObject.h */,
+				C6D8D1EB16F6AB7F007AE0A1 /* SMVennObject.m */,
 			);
 			path = VennDiagram;
 			sourceTree = "<group>";
@@ -181,6 +191,8 @@
 				C6D8D1CE16F6A769007AE0A1 /* main.m in Sources */,
 				C6D8D1D216F6A769007AE0A1 /* SMAppDelegate.m in Sources */,
 				C6D8D1E116F6A769007AE0A1 /* SMViewController.m in Sources */,
+				C6D8D1E916F6A7DA007AE0A1 /* SMVennDiagramView.m in Sources */,
+				C6D8D1EC16F6AB7F007AE0A1 /* SMVennObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
