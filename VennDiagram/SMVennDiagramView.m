@@ -75,27 +75,29 @@
     CGContextBeginPath(cgContext);
     CGContextSetLineWidth(cgContext, 2.0f);
     
+    // Convert UIColor to raw values
     CGFloat red = 0.0;
     CGFloat green = 0.0;
     CGFloat blue = 0.0;
     CGFloat alpha = 0.0;
-    
     [vo.color getRed:&red green:&green blue:&blue alpha:&alpha];
-    
-    alpha = 0.5;
+    alpha = 1.0;
     CGFloat color[4] = {red, green, blue, alpha};
     
     
-    
+    CGContextSetBlendMode(cgContext, kCGBlendModeScreen);
     
     CGRect r = CGRectMake(MIN(vo.pointBegin.x, vo.pointEnd.x),
                           MIN(vo.pointBegin.y, vo.pointEnd.y),
                           fabs(vo.pointBegin.x - vo.pointEnd.x),
                           fabs(vo.pointBegin.y - vo.pointEnd.y));
     
-    CGContextSetStrokeColor(cgContext, color);
+    // Draw ellipse
     CGContextSetFillColor(cgContext, color);
     CGContextFillEllipseInRect(cgContext, r);
+    
+    // Draw outline of ellipse
+    CGContextSetStrokeColor(cgContext, color);
     CGContextStrokeEllipseInRect(cgContext, r);
     
 }

@@ -13,10 +13,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F2Q-CQ-BcY" customClass="SMVennDiagramView">
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="F2Q-CQ-BcY" firstAttribute="top" secondItem="5" secondAttribute="top" type="default" id="gqW-et-6kB"/>
                             <constraint firstItem="F2Q-CQ-BcY" firstAttribute="leading" secondItem="5" secondAttribute="leading" constant="141" id="jTS-yg-s60"/>

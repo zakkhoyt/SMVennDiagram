@@ -19,34 +19,37 @@
 
 
 -(UIColor*)randomColor{
-    int r = arc4random() % 9;
-    switch(r){
+    static int index = 0;
+    
+    //int r = arc4random() % 9;
+    switch(index++){
         case 0:
-            return [UIColor colorWithRed:193/255.0 green:15/255.0 blue:0/255.0 alpha:1.0];
+            return [UIColor redColor];
             break;
         case 1:
-            return [UIColor colorWithRed:239/255.0 green:67/255.0 blue:0/255.0 alpha:1.0];
+            return [UIColor greenColor];
             break;
         case 2:
-            return [UIColor colorWithRed:250/255.0 green:171/255.0 blue:91/255.0 alpha:1.0];
+            return [UIColor blueColor];
             break;
         case 3:
-            return [UIColor colorWithRed:150/255.0 green:24/255.0 blue:18/255.0 alpha:1.0];
+            return [UIColor blackColor];
             break;
         case 4:
-            return [UIColor colorWithRed:192/255.0 green:26/255.0 blue:0/255.0 alpha:1.0];
+            return [UIColor whiteColor];
             break;
         case 5:
-            return [UIColor colorWithRed:239/255.0 green:79/255.0 blue:26/255.0 alpha:1.0];
+            return [UIColor orangeColor];
             break;
         case 6:
-            return [UIColor colorWithRed:42/255.0 green:0/255.0 blue:0/255.0 alpha:1.0];
+            return [UIColor purpleColor];
             break;
         case 7:
-            return [UIColor colorWithRed:110/255.0 green:3/255.0 blue:0/255.0 alpha:1.0];
+            return [UIColor brownColor];
             break;
         case 8:
-            return [UIColor colorWithRed:210/255.0 green:24/255.0 blue:3/255.0 alpha:1.0];
+            return [UIColor lightGrayColor];
+            index = 0;
             break;
         default:
             break;
